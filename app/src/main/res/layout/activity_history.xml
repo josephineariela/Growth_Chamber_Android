@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imageViewAgroCUBE"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/agrocube4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/tempGraph"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/humGraph"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tempGraph" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/moistGraph"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="@+id/tempGraph"
+        app:layout_constraintTop_toBottomOf="@+id/tempGraph" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/lightGraph"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/humGraph"
+        app:layout_constraintTop_toTopOf="@+id/moistGraph" />
+
+    <TextView
+        android:id="@+id/hTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Temperature :"
+        android:textStyle="bold"
+        android:textColor="@color/FontPurpose"
+        app:layout_constraintBottom_toTopOf="@+id/tempGraph"
+        app:layout_constraintEnd_toStartOf="@+id/hHumid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tempGraph"
+        app:layout_constraintTop_toBottomOf="@+id/hDate"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <TextView
+        android:id="@+id/hDate"
+        android:layout_width="117dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="132dp"
+        android:gravity="center"
+        android:text="Date  :"
+        android:textColor="@color/FontPurpose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="320dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/plantimage" />
+
+    <TextView
+        android:id="@+id/hHumid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity :"
+        android:textStyle="bold"
+        android:textColor="@color/FontPurpose"
+        app:layout_constraintStart_toStartOf="@+id/humGraph"
+        app:layout_constraintTop_toTopOf="@+id/hTemp" />
+
+    <TextView
+        android:id="@+id/hMoist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Moisture :"
+        android:textStyle="bold"
+        android:textColor="@color/FontPurpose"
+        app:layout_constraintBottom_toTopOf="@+id/moistGraph"
+        app:layout_constraintStart_toStartOf="@+id/moistGraph"
+        app:layout_constraintTop_toBottomOf="@+id/tempGraph"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/hLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Intensity :"
+        android:textStyle="bold"
+        android:textColor="@color/FontPurpose"
+        app:layout_constraintStart_toStartOf="@+id/lightGraph"
+        app:layout_constraintTop_toTopOf="@+id/hMoist" />
+
+
+    <TextView
+        android:id="@+id/hTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time : "
+        android:textColor="@color/FontPurpose"
+        android:layout_marginBottom="205dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
+
+    <ImageView
+        android:id="@+id/imageViewHistory"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/history_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="18dp"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogout"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/exit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/profile_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewHome"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageViewLogout"
+        android:src="@drawable/home_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewProfile"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHistory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
