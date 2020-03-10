@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C9683"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewAgroCUBE"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/agrocube4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/hDate"
+        android:layout_width="117dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Date  :"
+        android:textColor="@color/FontPurpose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvControl"
+        android:layout_width="326dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="145dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="Do you want to control it manually? Click Here"
+        android:textColor="@color/FontPurpose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewHumLOGO"
+        android:layout_width="49dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="142dp"
+        android:src="@drawable/humidity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="197dp"
+        android:text="Temperature"
+        android:textStyle="bold"
+        android:textColor="@color/FontPurpose"
+        android:textSize="15sp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:textColor="@color/FontPurpose"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="197dp"
+        android:layout_marginStart="270dp"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <TextView
+        android:id="@+id/textViewMoisture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moisture"
+        android:textStyle="bold"
+        android:textColor="@color/FontPurpose"
+        android:textSize="15sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <TextView
+        android:id="@+id/textViewLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Intensity"
+        android:textColor="@color/FontPurpose"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="330dp"
+        android:layout_marginStart="270dp"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <TextView
+        android:id="@+id/textViewOptTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimum :          "
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="226dp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <EditText
+        android:id="@+id/editTextOptTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:hint="Insert Here"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginStart="120dp"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <EditText
+        android:id="@+id/editTextOptHum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:hint="Insert Here"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <EditText
+        android:id="@+id/editTextOptMoist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Insert Here"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="120dp"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <EditText
+        android:id="@+id/editTextStartLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Insert Here"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <TextView
+        android:id="@+id/textViewActTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual      : 28 C"
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <ImageView
+        android:id="@+id/imageViewTempLOGO"
+        android:layout_width="54dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOptHum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimum :                 "
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="226dp"
+        android:layout_marginStart="270dp"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:id="@+id/textViewActHum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual      : 70 %RH  "
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="270dp"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <TextView
+        android:id="@+id/textViewActMoist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual      : 60 %RH  "
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="382dp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <ImageView
+        android:id="@+id/imageViewMoistLOGO"
+        android:layout_width="42dp"
+        android:layout_height="122dp"
+        android:src="@drawable/soilhumidity"
+        android:layout_marginTop="305dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/textViewStartLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Time :         "
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="356dp"
+        android:layout_marginStart="270dp"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEndLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Time   : 22:00"
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="382dp"
+        android:layout_marginStart="270dp"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <ImageView
+        android:id="@+id/imageViewLightLOGO"
+        android:layout_width="49dp"
+        android:layout_height="122dp"
+        android:src="@drawable/light_button"
+        android:layout_marginTop="305dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        android:layout_marginEnd="142dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/buttonPublishTemp"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Set Optimum"
+        android:textSize="10sp"
+        android:layout_marginTop="278dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.076" />
+
+    <Button
+        android:id="@+id/buttonPublishMoist"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="302dp"
+        android:background="@drawable/custom_button"
+        android:text="Set Optimum"
+        android:textSize="10sp"
+        android:layout_marginTop="411dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.045" />
+
+    <Button
+        android:id="@+id/buttonPublishHum"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Set Optimum"
+        android:textSize="10sp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.076" />
+
+    <Button
+        android:id="@+id/buttonPublishLight"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="302dp"
+        android:background="@drawable/custom_button"
+        android:text="Set Activation"
+        android:textSize="10sp"
+        android:layout_marginTop="411dp"
+        android:layout_marginEnd="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.045" />
+
+    <TextView
+        android:id="@+id/textViewOptMoist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimum :                 "
+        android:textColor="@color/FontPurposeLight"
+        android:textSize="12sp"
+        android:layout_marginTop="356dp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewPlantImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plant Image"
+        android:textColor="@color/FontPurpose"
+        android:textSize="14sp"
+        android:layout_marginBottom="225dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
+
+
+    <ImageView
+        android:id="@+id/imageViewPlantImage"
+        android:layout_width="340dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.842"
+        app:srcCompat="@drawable/plantimage" />
+
+    <ImageView
+        android:id="@+id/imageViewHistory"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/history_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="18dp"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogout"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/exit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/profile_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewHome"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageViewLogout"
+        android:src="@drawable/home_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewProfile"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHistory" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

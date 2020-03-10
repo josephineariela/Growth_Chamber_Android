@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewAgroCUBE"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/agrocube4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewProfilePic"
+        android:layout_width="72dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="154dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_picture" />
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/TitleColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProfilePic"
+        app:layout_constraintTop_toTopOf="@+id/imageViewProfilePic" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/TitleColor"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserName" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="104dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="240dp"
+        android:text="Name "
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUserName2"
+        android:layout_width="219dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:textColor="@color/TitleColor"
+        android:textColorHint="@color/hintColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="104dp"
+        android:layout_height="20dp"
+        android:text="Email Address"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserName2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserName2" />
+
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="219dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:textColor="@color/TitleColor"
+        android:textColorHint="@color/hintColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="104dp"
+        android:layout_height="20dp"
+        android:text="Phone Number"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserEmail" />
+
+    <TextView
+        android:id="@+id/textViewUserPhone"
+        android:layout_width="168dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:textColor="@color/TitleColor"
+        android:textColorHint="@color/hintColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPhone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhone" />
+
+    <TextView
+        android:id="@+id/textViewInstance"
+        android:layout_width="104dp"
+        android:layout_height="20dp"
+        android:text="Instance"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserPhone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserPhone" />
+
+    <TextView
+        android:id="@+id/textViewUserInstance"
+        android:layout_width="168dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:textColor="@color/TitleColor"
+        android:textColorHint="@color/hintColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewInstance"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstance" />
+
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:text="Edit Profile"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserInstance"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserInstance" />
+
+    <ImageView
+        android:id="@+id/imageViewHistory"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/history_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="18dp"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogout"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/exit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/profile_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewHome"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageViewLogout"
+        android:src="@drawable/home_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewProfile"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHistory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
