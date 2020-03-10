@@ -1,0 +1,19 @@
+LIST TAMPILAN ANDROID
+
+1. Splash Screen
+- nampilin logo AgroCUBE
+- durasi 3 detik
+
+2. Login Menu
+- email & password
+- fitur button login ke home menu
+- fitur ke register menu
+
+3. Register Menu
+- name, email, password, phone number, gender, occupation
+- fitur button sign up ke home menu
+- fitur ke login menu
+
+4. Home Menu
+- nampilin logo temperature, humidity, moisture, light --> disamping tiap logo ada informasi nilai aktual
+- jika logo ditekan, muncul halaman untuk set optimum 

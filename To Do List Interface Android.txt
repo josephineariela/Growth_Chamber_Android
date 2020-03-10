@@ -1,0 +1,47 @@
+WELCOME SCREEN 
+- 2 detik --> DONE
+- terangin background
+
+LOGIN MENU 
+- rapihin logo & tulisan --> DONE
+
+REGISTER MENU
+- dikasi keterangan isi "name" "email" "password" "instance" --> OPTIONAL
+- tambahin confirm password --> DONE
+- rapihin logo & tulisan --> DONE
+
+HOME MENU
+- nampilin gambar dr kamera
+- cuma nampilin logo & nama parameter & foto tanaman
+- tiap logo dipencet --> muncul informasi parameter terkait --> FRAGMENT
+- isi fragment
+
+- bisa set optimum lebih dari sekali --> DONE
+- jika sudah ada nilai optimal, editTextnya langsung hilang dr awal --> DONE
+- Jika sudah input nilai optimal, nilai di editText hilang ganti "insert here" lagi
+
+#FF044B34
+#00574B
+FF003129
+
+
+PROFILE MENU
+- edit informasi tanpa backspace --> buat activity baru --> DONE
+- update informasi ke database --> DONE
+- update email/password ke authentification
+- ganti editText jadi TextView --> biar gaada underline --> DONE
+- input profile picture dari hp
+
+HISTORY MENU
+- nampilin grafik 60 hari
+- nampilin gambar dr kamera
+- ambil data dr database
+
+YANG PERLU DIBENERIN DR APP
+- tulisan "Temperature" kependekan
+- ganti tulisan "Light Intensity" jadi "Light"
+- tulisan "Moisture" & "Light" diturunin dikit
+- tulisan "Actual :" Humidity terlalu ke kiri
+- logo moisture terlalu kekanan
+- logo light_on belom digantii
+- belom ada current time
