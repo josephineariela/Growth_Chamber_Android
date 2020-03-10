@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">37797681764-3koq4ce8q65ivdek9obn6kgh8qnaqacj.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ta-firebaseauth.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">37797681764</string>
+    <string name="google_api_key" translatable="false">AIzaSyBjN837yorTG-NeCaur10pQgqJoSSmRDw0</string>
+    <string name="google_app_id" translatable="false">1:37797681764:android:66bb5f7f8b625b7a4f9d71</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBjN837yorTG-NeCaur10pQgqJoSSmRDw0</string>
+    <string name="google_storage_bucket" translatable="false">ta-firebaseauth.appspot.com</string>
+    <string name="project_id" translatable="false">ta-firebaseauth</string>
+</resources>
