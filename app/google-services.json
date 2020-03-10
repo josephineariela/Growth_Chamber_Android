@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "37797681764",
+    "firebase_url": "https://ta-firebaseauth.firebaseio.com",
+    "project_id": "ta-firebaseauth",
+    "storage_bucket": "ta-firebaseauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37797681764:android:66bb5f7f8b625b7a4f9d71",
+        "android_client_info": {
+          "package_name": "com.example.ta_firebaseauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37797681764-8ufj3jrmljnl9ttbgv3iee1paspmlgl1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ta_firebaseauth",
+            "certificate_hash": "064c14ebf0d399d949d2deccf855199917f9afc4"
+          }
+        },
+        {
+          "client_id": "37797681764-3koq4ce8q65ivdek9obn6kgh8qnaqacj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjN837yorTG-NeCaur10pQgqJoSSmRDw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37797681764-3koq4ce8q65ivdek9obn6kgh8qnaqacj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
