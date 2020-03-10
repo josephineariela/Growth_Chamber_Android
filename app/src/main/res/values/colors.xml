@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0C9683</color>
+    <color name="whiteColor">#FFFF</color>
+    <color name="TitleColor">#C8FFF2</color>
+    <color name="colorPrimaryDark">#01533B</color>
+    <color name="FontPurposeLight">#C8FFF2</color>
+    <color name="FontPurpose">#003129</color>
+    <color name="FontProfileUser">#FFADECDB</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="hintColor">#BDBDBD</color>
+</resources>
